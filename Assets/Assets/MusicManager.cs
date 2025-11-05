@@ -47,6 +47,11 @@ public class MusicManager : MonoBehaviour
             previousSceneName = currentSceneName;
             MusicPlay(currentSceneName);
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     void MusicPlay (string sceneName)

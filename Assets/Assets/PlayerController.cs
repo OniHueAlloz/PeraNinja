@@ -57,11 +57,6 @@ public class PlayerController : MonoBehaviour
 
     void HandleActions()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Application.Quit();
-        }
-
         if (Input.GetKeyDown(KeyCode.K) || Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
         {
             animator.SetTrigger("Armature|Pera_Attack");
