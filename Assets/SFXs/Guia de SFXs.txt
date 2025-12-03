@@ -1,0 +1,24 @@
+Guia de SFXs:
+
+Player
+
+ - Footsteps (andar)
+ - Slash (ataque)
+ - Footsteps + Ouch (pulo)
+ - Ouch (recebeu dano)
+ - Smashed (morte)
+
+Inimigo
+
+ - Crawl (andar)
+ - Growl (ao se aproximar do player)
+
+Cenário
+
+ - Wind (toca constantemente)
+ - Grass (quando o jogador ou um inimigo colide com a grama)
+
+UI
+
+ - Taiko (clique nos botões da tela)
+ - Gong (tela de vitória/derrota)
