@@ -96,7 +96,7 @@ public class PlayerController : MonoBehaviour {
                     killCount++;
                     if (killCount >= 10){
                         MusicManager.instance.PlayGong();
-                        SceneManager.LoadScene("Victory");
+                        SceneManager.LoadScene("End");
                     } 
                 }
             }
