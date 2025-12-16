@@ -94,7 +94,7 @@ public class PlayerController : MonoBehaviour {
                 if (hit.collider.CompareTag("enemy")){
                     Destroy(hit.collider.gameObject);
                     killCount++;
-                    if (killCount >= 30){
+                    if (killCount >= 10){
                         MusicManager.instance.PlayGong();
                         SceneManager.LoadScene("Victory");
                     } 
