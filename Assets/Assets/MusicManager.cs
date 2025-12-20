@@ -50,16 +50,39 @@ public class MusicManager : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Escape)){
             Application.Quit();
         }
+
+            if (Input.GetKeyDown(KeyCode.T))
+            {
+                SceneManager.LoadScene("Intro");
+            }
     }
 
-    void MusicPlay (string sceneName){
-        if(sceneName == "Game"){
-            if (audioSource.clip != gameplay){
+    void MusicPlay(string sceneName)
+    {
+        if (sceneName == "Game")
+        {
+            if (audioSource.clip != gameplay)
+            {
                 audioSource.clip = gameplay;
                 audioSource.Play();
             }
-        } else {
-            if (audioSource.clip != menu){
+        }
+        else if (sceneName == "Intro" || sceneName == "End")
+        {
+            if (audioSource.clip != menu)
+            {
+                audioSource.clip = menu;
+                audioSource.Pause();
+            }
+            else
+            {
+                audioSource.Pause();
+            }
+        }
+        else
+        {
+            if (audioSource.clip != menu)
+            {
                 audioSource.clip = menu;
                 audioSource.Play();
             }
