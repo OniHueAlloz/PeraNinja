@@ -12,7 +12,7 @@ public class PlayerUI : MonoBehaviour
     {
         if (player == null) return;
 
-        healthText.text = "Vida: " + player.health.ToString();
+        healthText.text = "Vidas: " + player.health.ToString();
         killsText.text = "Derrotou: " + player.killCount.ToString();
     }
 }
